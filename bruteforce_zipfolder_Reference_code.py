@@ -2,6 +2,7 @@ import zipfile                     #Library used for password encrypted zipped f
 import time
 
 folderpath = input('Path to the file: ')  #Get the target file path and name from the user
+folderpath = folderpath.strip()
 zipf = zipfile.ZipFile(folderpath)      #Initialize a PdfFileReader object                             
 
 if not zipf:           #Checks if the file is password encrypted
